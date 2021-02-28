@@ -1,0 +1,16 @@
+div{
+    color:red;
+}
+#username{
+    color:green;
+    font-size:30px ;
+}
+.para{
+    background-color: aqua;
+}
+.content, .content1{
+    padding:16px;
+    border:2px solid black;
+    margin:16px;
+
+}

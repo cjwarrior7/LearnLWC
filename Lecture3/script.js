@@ -44,6 +44,33 @@ let obj3={...obj1,...obj2};
 console.log(obj3);
 
 //5.Shallow copy
+var arr10 =['x','y','z','m'];
+var arr11 = [...arr10];
+arr11.push('cj');
+console.log(arr10);
+console.log(arr11);
+
+//6.Nested Copy
+//****************Problem with Spread operator
+var hi =[
+    {name:"sfdc",
+age:5} ,
+    {name:"sfmc",
+age:6
+    }
+];
+var hi1 = [...hi];
+hi1[0].name ="sf";
+console.log(...hi1);
+console.log(...hi);
+//************solution or quick hack******************
+var hi2 = JSON.parse(JSON.stringify(hi)) ;
+//var hi2 = [...hi];
+hi2[0].name ="sfhc";
+console.log(...hi2);
+console.log(...hi);
+
+
 
 
 

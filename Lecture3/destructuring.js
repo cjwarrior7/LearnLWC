@@ -27,7 +27,18 @@ console.log(`${nam} is Sum of  ${a} and ${b} is ${a+b} `);
 let str = "SFDC Start test exam"
 let check = str.includes("test");
 console.log(check);
-
+//2.Index of
 let ind =str.indexOf('Start');
 console.log(ind);
+//3. startWith 
 console.log(str.startsWith('SFDC'));
+let newstr = str.slice(0,5)
+console.log(newstr);
+console.log(newstr.toLowerCase());
+console.log(str.toUpperCase());
+
+//6.trim method remove whitespaces
+var str1 = "         Hello       ";
+ var newst = str1.trim();
+ console.log(newst);
+                                                                                                          

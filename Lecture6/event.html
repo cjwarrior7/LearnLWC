@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="event.js"></script>
+</head>
+<body>
+    <div>HI LWC</div>
+    <div>HI OHANA</div>
+    <div>HI Everyone</div>
+    <div class="demo"></div>
+    <!--event bubbling is from bottom to up example given below-->
+    <form onclick="alert('Hi I am form')">Hi form
+        <div onclick="alert('Hi I am div')">Hi div
+            <p onclick="alert('Hi I am p tag')">Hi para</p>
+        </div>
+    </form>
+    
+
+    <button onclick="removeHandler()">CLICK ME</button>
+
+    <button onclick="callCustomMethod()">LWC TEST</button>
+</body>
+</html>

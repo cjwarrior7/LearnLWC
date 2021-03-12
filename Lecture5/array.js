@@ -33,6 +33,29 @@ console.log(isAll);
 var name = ["cj","hj","showan","triya","aman"];
 //name.sort();
 //console.log(name.sort());
+var points = [10,39,12,69,48];
+var sortedpoints = points.sort(function(a,b){
+    return b-a ; //a-b (ascending)
+    //b-a (desending)
+    //
+})
+
+console.log(sortedpoints);
+
+let num =[12,36,52];
+// let res = num.reduce(function(total,currentItem,index,array){
+ 
+// });
+
+let res = num.reduce(function(total,currentItem,index,array){
+    return total + currentItem;
+},0);
+
+console.log(res);
+num.forEach(function(currentItem){
+    console.log('CI '+currentItem);
+    
+})
 
 
 
